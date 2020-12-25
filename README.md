@@ -18,8 +18,10 @@ cd MyCordova/
 
 ng g application app --routing=true --style=scss
 
+ng add @angular/material
+
 sed -i 's/dist\/app/www/' angular.json
-sed -i 's/es2015/es5/' tsconfig.json
+#sed -i 's/es2015/es5/' tsconfig.json
 
 # main.ts:
 #const onDeviceReady = () => {
